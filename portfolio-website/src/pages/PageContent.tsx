@@ -1,7 +1,11 @@
+import AboutMe from "../components/AboutMe";
 import MusicStats from "../components/MusicStats";
 
 function PageContent() {
-    return ( <div><MusicStats/></div> );
+    return ( <div>
+        <AboutMe/>
+        <MusicStats/>
+        </div> );
 }
 
 export default PageContent;
