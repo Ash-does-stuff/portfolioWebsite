@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 import "../styles/main.css";
+import PageContent from "./PageContent";
 
 function PageHome() {
 
@@ -44,30 +45,7 @@ function PageHome() {
           <img src={require("../assets/wave.png")} className="helloImg" alt="haaaiii :3"/>
       </div>}
 
-      {contentVisible && <div><div className="row centerAlign" style={{width: "100vw", height: "100vh"}}>
-        <div className="column">
-            <h1 className="resetMargin" style={{fontSize: "4vw"}}>Hey there!</h1>
-            <h4 className="resetMargin indentation">welcum to my page :333</h4>
-        </div>
-          <img src={require("../assets/wave.png")} className="helloImg" alt="haaaiii :3"/>
-      </div>
-
-      <div className="row centerAlign" style={{width: "100vw", height: "100vh"}}>
-        <div className="column">
-            <h1 className="resetMargin" style={{fontSize: "4vw"}}>Hey there!</h1>
-            <h4 className="resetMargin indentation">welcum to my page :333</h4>
-        </div>
-          <img src={require("../assets/wave.png")} className="helloImg" alt="haaaiii :3"/>
-      </div>
-
-      <div className="row centerAlign" style={{width: "100vw", height: "100vh"}}>
-        <div className="column">
-            <h1 className="resetMargin" style={{fontSize: "4vw"}}>Hey there!</h1>
-            <h4 className="resetMargin indentation">welcum to my page :333</h4>
-        </div>
-          <img src={require("../assets/wave.png")} className="helloImg" alt="haaaiii :3"/>
-      </div>
-      </div>}
+      {contentVisible && <PageContent/>}
 
     </div>
   );
