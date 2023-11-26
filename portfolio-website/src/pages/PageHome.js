@@ -5,8 +5,20 @@ import "../styles/main.css";
 function PageHome() {
 
   let [headerVisible, setHeaderVisible] = useState(true)
+  let [contentVisible, setContentVisible] = useState(false)
 
   useEffect(() => {
+
+    setTimeout(() => {setContentVisible(true); console.log("dfehhfbd")},3000)
+
+    window.onload = () => {
+      window.scrollTo(0, 0);
+    };
+  
+    window.onbeforeunload = () => {
+      window.scrollTo(0, 0);
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         
@@ -22,7 +34,7 @@ function PageHome() {
   })
 
   return (
-    <div className="container"onScroll={() => {console.log("haai")}}>
+    <div className="container">
 
       {headerVisible && <div className="row centerAlign" style={{width: "100vw", height: "100vh"}} id="header">
         <div className="column">
@@ -32,7 +44,7 @@ function PageHome() {
           <img src={require("../assets/wave.png")} className="helloImg" alt="haaaiii :3"/>
       </div>}
 
-      <div className="row centerAlign" style={{width: "100vw", height: "100vh"}}>
+      {contentVisible && <div><div className="row centerAlign" style={{width: "100vw", height: "100vh"}}>
         <div className="column">
             <h1 className="resetMargin" style={{fontSize: "4vw"}}>Hey there!</h1>
             <h4 className="resetMargin indentation">welcum to my page :333</h4>
@@ -55,6 +67,7 @@ function PageHome() {
         </div>
           <img src={require("../assets/wave.png")} className="helloImg" alt="haaaiii :3"/>
       </div>
+      </div>}
 
     </div>
   );
