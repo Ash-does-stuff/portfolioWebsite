@@ -23,6 +23,8 @@
 	        animation: fade-in-bottom 3s ease-in-out both;
 }
 
+/*ANIMATIONS*/
+
 @keyframes fade-in-bottom {
     0% {
       -webkit-transform: translateY(30vh);
@@ -67,6 +69,19 @@
     }
   }
 
+  @keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(20vw);
+    }
+    20% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
 /* GENERAL */
 .container {
@@ -100,6 +115,14 @@
     justify-content: center;
 }
 
+.indentation {
+  margin-left: 1.5vw;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
 .zoomOnHover {
     transition: background-color 2s ease-in-out 100ms;
 }
@@ -109,3 +132,10 @@
 }
 
 /* HEADER */
+.helloImg {
+  width: 27.585vw;
+  height: 30vw;
+
+  animation: fade-in-right 1s ease-out both;
+  animation-delay: 2.9s;
+}
