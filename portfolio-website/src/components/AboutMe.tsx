@@ -1,7 +1,7 @@
 function AboutMe() {
   return (
       <div className="column centerAlign aboutMe">
-        <div className="row" style={{}}>
+        <div className="row" style={{width: "100%"}}>
           <div style={{flex: 3, display: "flex", alignItems: "center", justifyContent: "center"}}>
             <img src={require("../assets/uwuHiBig.png")} />
           </div>
