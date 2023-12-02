@@ -10,7 +10,7 @@ function PageHome() {
 
   useEffect(() => {
 
-    setTimeout(() => {setContentVisible(true); console.log("dfehhfbd")},3000)
+    setTimeout(() => {setContentVisible(true); console.log("dfehhfbd")},3100)
 
     window.onload = () => {
       window.scrollTo(0, 0);
