@@ -139,3 +139,11 @@
   animation: fade-in-right 1s ease-out both;
   animation-delay: 2.8s;
 }
+
+/* ABOUT ME */
+.aboutMe {
+  width: 95vw;
+  padding: 2vw;
+
+  background-color: #333333;
+}
