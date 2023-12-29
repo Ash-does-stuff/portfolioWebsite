@@ -29,6 +29,15 @@ body {
 
 /*ANIMATIONS*/
 
+.animationStart {
+  opacity: 0;
+}
+
+.fadeInBottom {
+  -webkit-animation: fade-in-bottom 1.5s ease-in-out both;
+	        animation: fade-in-bottom 1.5s ease-in-out both;
+}
+
 @keyframes fade-in-bottom {
     0% {
       -webkit-transform: translateY(30vh);
@@ -73,7 +82,31 @@ body {
     }
   }
 
+  .fadeInRight {
+    -webkit-animation: fade-in-right 1.5s ease-in-out both;
+            animation: fade-in-right 1.5s ease-in-out both;
+  }
+
   @keyframes fade-in-right {
+    0% {
+      opacity: 0;
+      transform: translateX(20vw);
+    }
+    20% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .fadeInLeft {
+    -webkit-animation: fade-in-left 1.5s ease-in-out both;
+            animation: fade-in-left 1.5s ease-in-out both;
+  }
+
+  @keyframes fade-in-left {
     0% {
       opacity: 0;
       transform: translateX(20vw);

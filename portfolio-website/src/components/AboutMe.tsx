@@ -16,8 +16,8 @@ function AboutMe() {
           </div>
         </div>
 
-        <div className="row" style={{width: "100%", margin: "1vw"}}>
-          
+
+        <div className="row animationStart" style={{width: "100%", margin: "1vw"}} id="fadeInLeft">
           <div style={{flex:2, display: "flex", alignItems: "center", justifyContent: "flex-end"}}>
             <div className="column">
               <h1 className="resetMargin" style={{ fontSize: "3vw" }}>
@@ -26,12 +26,26 @@ function AboutMe() {
               <h4 className="resetMargin indentation">I also kinda like music<br /> I guess</h4>
             </div>
           </div>
-
           <div style={{flex: 3, display: "flex", alignItems: "center", justifyContent: "center"}}>
             <img src={require("../assets/uwuHiBig.png")} />
           </div>
-
         </div>
+
+
+        <div className="row animationStart" style={{width: "100%", margin: "1vw"}} id="fadeInLeft">
+          <div style={{flex:2, display: "flex", alignItems: "center", justifyContent: "flex-end"}}>
+            <div className="column">
+              <h1 className="resetMargin" style={{ fontSize: "3vw" }}>
+                About me 2
+              </h1>
+              <h4 className="resetMargin indentation">I also kinda like music<br /> I guess</h4>
+            </div>
+          </div>
+          <div style={{flex: 3, display: "flex", alignItems: "center", justifyContent: "center"}}>
+            <img src={require("../assets/uwuHiBig.png")} />
+          </div>
+        </div>
+
 
       </div >
   );

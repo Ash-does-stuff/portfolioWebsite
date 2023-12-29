@@ -10,7 +10,7 @@ function PageHome() {
 
   useEffect(() => {
 
-    setTimeout(() => {setContentVisible(true); console.log("dfehhfbd")},3100)
+    setTimeout(() => {setContentVisible(true);},3100)
 
     window.onload = () => {
       window.scrollTo(0, 0);
@@ -21,10 +21,8 @@ function PageHome() {
     };
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        
+      entries.forEach((entry) => {    
         if (!entry.isIntersecting) {
-          console.log(entry)
           setHeaderVisible(false)
         }
       })
