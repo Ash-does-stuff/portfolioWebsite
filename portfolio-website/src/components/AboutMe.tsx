@@ -31,7 +31,7 @@ function AboutMe() {
           </div>
         </div>
 
-        <div className="row" style={{width: "100%", margin: "1vw"}}>
+        <div className="row" style={{width: "100%", margin: "2vw"}}>
           <div style={{flex:1, display: "flex", alignItems: "center", justifyContent: "center"}}>
             <div className="column">
               <h1 className="resetMargin" style={{ fontSize: "3vw", textAlign: "center" }}>
