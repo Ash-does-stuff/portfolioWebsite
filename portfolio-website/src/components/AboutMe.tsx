@@ -2,7 +2,7 @@ function AboutMe() {
   return (
       <div className="column centerAlign aboutMe">
 
-        <div className="row preset-fadeInRight" style={{width: "100%", margin: "1vw"}}>
+        <div className="row" style={{width: "100%", margin: "1vw"}}>
           <div style={{flex: 3, display: "flex", alignItems: "center", justifyContent: "center"}}>
             <img src={require("../assets/uwuHiBig.png")} />
           </div>
@@ -31,12 +31,19 @@ function AboutMe() {
           </div>
         </div>
 
-
         <div className="row" style={{width: "100%", margin: "1vw"}}>
-          <div style={{flex:1, display: "flex", alignItems: "center", justifyContent: "flex-end"}}>
+          <div style={{flex:1, display: "flex", alignItems: "center", justifyContent: "center"}}>
             <div className="column">
               <h1 className="resetMargin" style={{ fontSize: "3vw", textAlign: "center" }}>
                 thats about it :p
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                yeah
               </h1>
             </div>
           </div>

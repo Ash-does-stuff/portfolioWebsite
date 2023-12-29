@@ -7,6 +7,7 @@ function App() {
   const timeBeforeStart = 3200
   const observedClasses = ["fadeInLeft","fadeInRight"]
 
+  //ANIMATIONS
   useEffect(() => {
 
     const getObserver = (classToAdd) => {
@@ -19,7 +20,6 @@ function App() {
         })
       })
     }
-
     
     setTimeout(() => {
       observedClasses.forEach((className) => {
@@ -35,10 +35,7 @@ function App() {
         
       }
       //if (objs) {getObserver(className).observe(objs)}
-    })
-        
-      
-    },timeBeforeStart)
+    })},timeBeforeStart)
     
   })
 
