@@ -5,11 +5,11 @@ import PageHome from "./pages/PageHome";
 function App() {
 
   const timeBeforeStart = 3200
-  const observedIds = ["fadeInLeft"]
+  const observedClasses = ["fadeInLeft","fadeInRight"]
 
   useEffect(() => {
 
-    const getObserver = (classToAdd:string) => {
+    const getObserver = (classToAdd) => {
       return new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -22,10 +22,19 @@ function App() {
 
     
     setTimeout(() => {
-      observedIds.forEach((id) => {
-      let objs = document.getElementById(id)
+      observedClasses.forEach((className) => {
+      let elements = document.getElementsByClassName("preset-" + className)
+      let objs = [].slice.call(elements);
       console.log(objs)
-      if (objs) {getObserver(id).observe(objs)}
+      if (objs) {
+        objs.forEach((element) => {
+          element.classList.remove("preset-" + className);
+          element.classList.add("animationStart");
+          getObserver(className).observe(element)
+        })
+        
+      }
+      //if (objs) {getObserver(className).observe(objs)}
     })
         
       

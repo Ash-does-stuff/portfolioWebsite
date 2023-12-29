@@ -67,21 +67,6 @@ body {
     }
   }
 
-  @keyframes screen-fade-in-bottom {
-    0% {
-      opacity: 1; /*change to 0 later*/
-    }
-    20% {
-        opacity: 1;
-      }
-    80% {
-        opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-
   .fadeInRight {
     -webkit-animation: fade-in-right 1.5s ease-in-out both;
             animation: fade-in-right 1.5s ease-in-out both;
@@ -90,7 +75,7 @@ body {
   @keyframes fade-in-right {
     0% {
       opacity: 0;
-      transform: translateX(20vw);
+      transform: translateX(-20vw);
     }
     20% {
       opacity: 0;
@@ -175,6 +160,21 @@ body {
 
   animation: fade-in-right 1s ease-out both;
   animation-delay: 2.8s;
+}
+
+@keyframes screen-fade-in-bottom {
+  0% {
+    opacity: 1; /*change to 0 later*/
+  }
+  20% {
+      opacity: 1;
+    }
+  80% {
+      opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* ABOUT ME */
