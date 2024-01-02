@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import WelcomeAnimation from './components/WelcomeAnimation';
 import PageHome from "./pages/PageHome";
 
-function App() {
+function Main() {
 
   const timeBeforeStart = 3200
   const observedClasses = ["fadeInLeft","fadeInRight"]
@@ -47,4 +47,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;

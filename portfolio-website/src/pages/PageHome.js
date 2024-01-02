@@ -38,7 +38,7 @@ function PageHome() {
       {headerVisible && <div className="row centerAlign" style={{width: "100vw", height: "100vh"}} id="header">
         <div className="column">
             <h1 className="resetMargin" style={{fontSize: "4vw"}}>HAAAAAAIIIIIII</h1>
-            <h4 className="resetMargin indentation">welcum to my page :333</h4>
+            <h4 className="resetMargin indentation">welcome to my page :333</h4>
         </div>
           <img src={require("../assets/wave.png")} className="helloImg" alt="haaaiii :3"/>
       </div>}
