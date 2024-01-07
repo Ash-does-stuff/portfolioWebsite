@@ -263,12 +263,18 @@ body {
 
   -webkit-animation: fade-in-left 1.5s ease-in-out;
   animation: fade-in-left 1.5s ease-in-out;
-  animation-delay: calc(10 * var(--n));
+  animation-delay: calc(10000 * var(--n));
 
   font-size:1vw;
 
   animation: card-bg 25s ease-in-out infinite;
   
+  
+}
+
+.songCard h3 {
+  color: rgb(255, 255, 255); 
+    mix-blend-mode: difference;
 }
 
 @keyframes card-bg {
@@ -291,3 +297,4 @@ body {
 
   border-radius: 100%;
 }
+

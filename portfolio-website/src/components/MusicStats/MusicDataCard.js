@@ -17,10 +17,10 @@ function MusicDataCard(props) {
       {props.type=="Artists" ? <h3 style={{ marginLeft: "0.5vw" }}>{props.title}</h3>:<div className="column">
       <h3 style={{ marginLeft: "0.5vw" }}>{props.title}<br></br><i><small>{props.artists.map((artist,i) => artist + (i+1<props.artists.length ? ", ":""))}</small></i></h3>
       </div>}
-    </div>,
+    </div>
   ]);
 
-  const css = `#${id} {transition: 1s;} #${id}:hover {background-image:url(${props.img});color: white}`;
+  const css = `#${id} {transition: 1s;} #${id}:hover {background-image:url(${props.img});color: white} `;
   let styleElement = document.createElement("style");
   if (styleElement.styleSheet) {
     styleElement.styleSheet.cssText = css;
