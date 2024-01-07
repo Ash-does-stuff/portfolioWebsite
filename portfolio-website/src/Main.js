@@ -5,7 +5,7 @@ import PageHome from "./pages/PageHome";
 function Main() {
 
   const timeBeforeStart = 3200
-  const observedClasses = ["fadeInLeft","fadeInRight"]
+  const observedClasses = ["fadeInLeft","fadeInRight","fadeInBottom","songCard"]
 
   //ANIMATIONS
   useEffect(() => {
@@ -21,21 +21,31 @@ function Main() {
       })
     }
     
-    setTimeout(() => {
+    const refreshObservers = () => {
       observedClasses.forEach((className) => {
       let elements = document.getElementsByClassName("preset-" + className)
       let objs = [].slice.call(elements);
-      console.log(objs)
       if (objs) {
         objs.forEach((element) => {
           element.classList.remove("preset-" + className);
           element.classList.add("animationStart");
           getObserver(className).observe(element)
         })
-        
-      }
-      //if (objs) {getObserver(className).observe(objs)}
-    })},timeBeforeStart)
+        }
+    })}
+
+    setTimeout(setInterval(() => {
+      observedClasses.forEach((className) => {
+      let elements = document.getElementsByClassName("preset-" + className)
+      let objs = [].slice.call(elements);
+      if (objs) {
+        objs.forEach((element) => {
+          element.classList.remove("preset-" + className);
+          element.classList.add("animationStart");
+          getObserver(className).observe(element)
+        })
+        }
+    })},100),timeBeforeStart)
     
   })
 
