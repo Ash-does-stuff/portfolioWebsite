@@ -185,6 +185,10 @@ body {
   justify-content: center;
 }
 
+.evenSpacing {
+  justify-content: space-around;
+}
+
 .indentation {
   margin-left: 1.5vw;
 }

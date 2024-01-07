@@ -13,7 +13,7 @@ function MusicStats() {
         console.log(data);
         
         setElements([
-          <CardContainer key={1} type={"Songs"} data={data.songs.slice(0,10)} />,
+          <CardContainer key={1} type={"Songs"} data={data.songs.slice(0,5)} />,
           <CardContainer key={2} type={"Artists"} data={data.artists.slice(0,5)} />,
           <CardContainer key={3} type={"Albums"} data={data.albums.slice(0,5)} />,
         ]);
@@ -29,7 +29,8 @@ function MusicStats() {
       className="column centerAlign"
       style={{ padding: "2vw", width: "95vw"}}
     >
-      <h1>Music data</h1>
+      <h1 style={{fontSize: "3vw"}}>Music stats</h1>
+      <h2 style={{fontSize: "1.5vw"}}>Pulled straight from the spotify API :3</h2>
       <div className="row">
         {elements}
       </div>

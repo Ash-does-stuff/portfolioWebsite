@@ -6,13 +6,17 @@ function MusicDataCard(props) {
 
   const id = "musicCard-" + props.type + "-" + props.id;
 
+  //const artists = props.artists.map((artist) => artist + ", ").slice(0,-2)
+
   const [content, setContent] = useState([
     <div className="row preset-songCard" style={style} id={id}>
       <img src={props.img} alt="cover"></img>
       <h3>
         <strong>{props.id + "."}</strong>
       </h3>
-      <h3 style={{ marginLeft: "0.5vw" }}>{props.title}</h3>
+      {props.type=="Artists" ? <h3 style={{ marginLeft: "0.5vw" }}>{props.title}</h3>:<div className="column">
+      <h3 style={{ marginLeft: "0.5vw" }}>{props.title}<br></br><i><small>{props.artists.map((artist,i) => artist + (i+1<props.artists.length ? ", ":""))}</small></i></h3>
+      </div>}
     </div>,
   ]);
 

@@ -16,6 +16,13 @@ function CardContainer(props: Props) {
 
       let title = obj.score ? obj.album.name:obj.name;
       let img = obj.album ? obj.album.image.url:obj.image.url
+      if (props.type != "Artists") {
+        let artists = obj.album.artists.map((obj: any) => obj.name)
+        return (
+            <MusicDataCard key={i} type={props.type} id={i} title={title} artists={artists} img={img}/>
+          )
+    }
+      
       return (
         <MusicDataCard key={i} type={props.type} id={i} title={title} img={img}/>
       )
@@ -23,7 +30,7 @@ function CardContainer(props: Props) {
   };
 
   return (
-    <div className="column cardContainer preset-fadeInBottom">
+    <div className="column cardContainer evenSpacing preset-fadeInBottom">
       <h2>{props.type + ": "}</h2>
       {cards()}
     </div>
