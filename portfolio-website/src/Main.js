@@ -4,7 +4,7 @@ import PageHome from "./pages/PageHome";
 
 function Main() {
 
-  const timeBeforeStart = 3200
+  const timeBeforeStart = 3400
   const observedClasses = ["fadeInLeft","fadeInRight","fadeInBottom","songCard"]
 
   //ANIMATIONS
