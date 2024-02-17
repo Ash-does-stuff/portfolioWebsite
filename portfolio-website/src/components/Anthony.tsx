@@ -4,7 +4,7 @@ function Anthony() {
         style={{ padding: "2vw", backgroundColor: "#444444"}}
       >
 
-        <img src={require("../assets/anthony.jpg")} alt="anthony" style={{width: "50vw", height: "50vw"}}></img>
+        <img src={require("../assets/anthony.jpg")} alt="anthony" style={{width: "30vw", height: "30vw"}}></img>
         <h1>anthony</h1>
 
       </div> );

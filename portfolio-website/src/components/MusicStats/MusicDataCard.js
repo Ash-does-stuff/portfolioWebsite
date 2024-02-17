@@ -7,7 +7,7 @@ function MusicDataCard(props) {
   const id = "musicCard-" + props.type + "-" + props.id;
 
   const [content] = useState([
-    <div className="preset-songCard" style={style} id={id}>
+    <div className="songCard" style={style} id={id}>
       <div className="bg">
 
       </div>
@@ -23,13 +23,9 @@ function MusicDataCard(props) {
     </div>
   ]);
 
-  const css = `#${id} {
-    transition: 0s;
-  } 
+  const css = `
     #${id}:hover .bg {
       background-image:url(${props.img});
-      color: white;filter: blur(0.15vw); 
-      background-size: 200% 600%;
     } `;
 
   let styleElement = document.createElement("style");
